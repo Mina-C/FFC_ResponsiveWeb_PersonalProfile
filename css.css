@@ -13,24 +13,42 @@ body{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #7bed9f;
+  background-color: #B2DFDB;
   margin: -10px -10px 0 -10px;
 }
 
 #projects {
   display: grid;
-  grid-teplate-columns :
-    repeat(auto-fill, minmax(150px, 2fx));
+  grid-template-columns : 1fr 1fr;
   grid-gap: 10px;
+  margin: 20px;
+}
+section h2 {
+  grid-area: 1/1/2/3;
+  text-align: center;
+}
+section a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 #project-img {
   width: 300px;
   height: 200px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
 .project-tile{
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
+  border: 2px solid #8D6E63;
+  align-tiems: center;
+  margin: 0 20px 0 20px;
+  padding: 10px 0 0 0 ;
 }
+
+/* background-color: #FFE0B2; */
