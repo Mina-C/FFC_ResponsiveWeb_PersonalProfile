@@ -11,26 +11,47 @@ body{
   height: 100vh; /* 1600 × 789 */
   text-align: center;
   display: flex;
+  top: 0;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #B2DFDB;
 }
 
-#projects {
-  display: grid;
-  grid-template-columns : 1fr 1fr;
-  grid-gap: 10px;
-  margin: 50px 20px 20px 20px ;
+section h1 {
+  margin: 10px;
 }
+
+#intro{
+  margin: 3px 0 0 0;
+  text-align: left;
+  color: #004D40;
+}
+
+#fcc-projects {
+  display: grid;
+  grid-template-columns : repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 10px;
+  margin: 20px 10% 20px 10% ;
+  font-weight: bold;
+  justify-items: center;
+}
+
 section h2 {
-  grid-area: 1/1/2/3;
+  margin-top: 50px;
   text-align: center;
 }
+
+#project-subtitle {
+  margin-top: 30px;
+  text-align: center;
+  color: #004D40;
+}
+
 section a {
-  text-decoration: none;
-  color: black;
+  color: #00695C;
   font-weight: bold;
+  font-size: 1.05em;
 }
 
 #project-img {
@@ -45,10 +66,12 @@ section a {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  align-tiems: center;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 0 0 0 ;
+  border: 2px solid #00695C;
+  padding: 20px 10px 10px 10px ;
+  margin: 0px 10px 10px 10px;
 }
 
+#contact {
+  background: linear-gradient(180deg,#FFCCBC,#FFF9C4,#C8E6C9 , #C5CAE9);
+}
 /* background-color: #FFE0B2; */
